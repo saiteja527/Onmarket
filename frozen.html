@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>On Market</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="A grocery web Application for the best encouragement of local merchant business" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<script src="js/jquery-1.11.1.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="agileits_header">
+	<div class="w3l_offers">
+		<a href="products.html">Flash deals!</a>
+	</div>
+	<div class="product_list_header">  
+		<form action="#" method="post" class="last">
+			<fieldset>
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="display" value="1" />
+				<input type="submit" name="submit" value="View cart        " class="button" />
+			</fieldset>
+		</form>
+	</div>
+	<div class="w3l_header_right">
+		<ul>
+			<li class="dropdown profile_details_drop">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+				<div class="mega-dropdown-menu">
+					<div class="w3ls_vegetables">
+						<ul class="dropdown-menu drp-mnu">
+							<li><a href="login.html">Login</a></li> 
+							<li><a href="login.html">Sign Up</a></li>
+						</ul>
+					</div>                  
+				</div>	
+			</li>
+		</ul>
+	</div>
+	<div class="w3l_header_right1">
+		<h2><a href="mail.html">Contact Us</a></h2>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<script>
+$(document).ready(function() {
+	 var navoffeset=$(".agileits_header").offset().top;
+	 $(window).scroll(function(){
+		var scrollpos=$(window).scrollTop(); 
+		if(scrollpos >=navoffeset){
+			$(".agileits_header").addClass("fixed");
+		}else{
+			$(".agileits_header").removeClass("fixed");
+		}
+	 });
+	 
+});
+</script>
+<!-- //script-for sticky-nav -->
+<div class="logo_products">
+	<div class="container">
+		<div class="some">
+			<h1><a href="index.html"><img src="images/onm.jpg" alt=" " width="200" height="100"class="img-responsive"></a></h1>
+		</div>
+		<div class="w3ls_logo_products_left1">
+			<ul class="special_items">
+				
+				<li><a href="about.html">About Us</a><i>/</i></li>
+				<li><a href="products.html">Best Deals</a><i>/</i></li>
+				<li><a href="services.html">Services</a></li>
+			</ul>
+		</div>
+		<div class="w3ls_logo_products_left1">
+			<ul class="phone_email">
+				<li><i class="fa fa-phone" aria-hidden="true"></i>91+ 12345678</li>
+				<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">onmarket@gmail.com</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li>Frozen Food</li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="products.html">Branded Foods</a></li>
+						<li><a href="household.html">Households</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="vegetables.html">Vegetables</a></li>
+										<li><a href="vegetables.html">Fruits</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li><a href="kitchen.html">Kitchen</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="drinks.html">Soft Drinks</a></li>
+										<li><a href="drinks.html">Juices</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="frozen.html">Frozen Snacks</a></li>
+										<li><a href="frozen.html">Frozen Nonveg</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+						<li><a href="bread.html">Bread & Bakery</a></li>
+						<li><a href="payment.html">Payment</a></li>
+					</ul>
+				 </div>
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+			<div class="w3l_banner_nav_right_banner10">
+				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+			</div>
+			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+				<h3 class="w3l_fruit">Frozen Food</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive"></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/64.png" alt=" " class="img-responsive" /></a>
+											<p>pepper salami (250 gm)</p>
+											<h4>₹100 <span>₹120</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="pepper salami" />
+													<input type="hidden" name="amount" value="100" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/65.png" alt=" " class="img-responsive" /></a>
+											<p>sumeru green pees (500 gm)</p>
+											<h4>₹90 <span>₹110</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="sumeru green pees" />
+													<input type="hidden" name="amount" value="90" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/66.png" alt=" " class="img-responsive" /></a>
+											<p>tikka chicken (300 gm)</p>
+											<h4>₹60 <span>₹80</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="tikka chicken" />
+													<input type="hidden" name="amount" value="60" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/67.png" alt=" " class="img-responsive" /></a>
+											<p>mixed vegetables (500 gm)</p>
+											<h4>₹60 <span>₹70</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="mixed vegetables" />
+													<input type="hidden" name="amount" value="60" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/68.png" alt=" " class="img-responsive" /></a>
+											<p>mango pulp (800 gm)</p>
+											<h4>₹90 <span>₹110</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="mango pulp" />
+													<input type="hidden" name="amount" value="90" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/69.png" alt=" " class="img-responsive" /></a>
+											<p>kesar mango pulp (800 gm)</p>
+											<h4>₹50 <span>₹80</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="kesar mango pulp" />
+													<input type="hidden" name="amount" value="50" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/70.png" alt=" " class="img-responsive" /></a>
+											<p>frozen sweet corn (250 gm)</p>
+											<h4>₹60 <span>₹80</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="frozen sweet corn" />
+													<input type="hidden" name="amount" value="60" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/71.png" alt=" " class="img-responsive" /></a>
+											<p>chicken nuggets (1 kg)</p>
+											<h4>₹40 <span>₹60</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="chicken nuggets" />
+													<input type="hidden" name="amount" value="40" />
+													<input type="hidden" name="discount_amount" value="10" />
+													<input type="hidden" name="currency_code" value="INR" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 w3_footer_grid">
+			<h3>information</h3>
+			<ul class="w3_footer_grid_list">
+				
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="products.html">Best Deals</a></li>
+				<li><a href="services.html">Services</a></li>
+				
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>policy info</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="faqs.html">FAQ</a></li>
+				<li><a href="privacy.html">privacy policy</a></li>
+				<li><a href="privacy.html">terms of use</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>what in stores</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="frozen.html">Frozen Snacks</a></li>
+				<li><a href="kitchen.html">Kitchen</a></li>
+				<li><a href="products.html">Branded Foods</a></li>
+				<li><a href="household.html">Households</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.min.js"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+</body>
+</html>

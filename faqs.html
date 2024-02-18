@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>On Market</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="A grocery web Application for the best encouragement of local merchant business" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<script src="js/jquery-1.11.1.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+<div class="agileits_header">
+	<div class="w3l_offers">
+		<a href="products.html">Flash deals!</a>
+	</div>
+	<div class="product_list_header">  
+		<form action="#" method="post" class="last">
+			<fieldset>
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="display" value="1" />
+				<input type="submit" name="submit" value="View cart        " class="button" />
+			</fieldset>
+		</form>
+	</div>
+	<div class="w3l_header_right">
+		<ul>
+			<li class="dropdown profile_details_drop">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+				<div class="mega-dropdown-menu">
+					<div class="w3ls_vegetables">
+						<ul class="dropdown-menu drp-mnu">
+							<li><a href="login.html">Login</a></li> 
+							<li><a href="login.html">Sign Up</a></li>
+						</ul>
+					</div>                  
+				</div>	
+			</li>
+		</ul>
+	</div>
+	<div class="w3l_header_right1">
+		<h2><a href="mail.html">Contact Us</a></h2>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<script>
+$(document).ready(function() {
+	 var navoffeset=$(".agileits_header").offset().top;
+	 $(window).scroll(function(){
+		var scrollpos=$(window).scrollTop(); 
+		if(scrollpos >=navoffeset){
+			$(".agileits_header").addClass("fixed");
+		}else{
+			$(".agileits_header").removeClass("fixed");
+		}
+	 });
+});
+</script>
+<div class="logo_products">
+	<div class="container">
+		<div class="some">
+			<h1><a href="index.html"><img src="images/onm.jpg" alt=" " width="200" height="100"class="img-responsive"></a></h1>
+		</div>
+		<div class="w3ls_logo_products_left1">
+			<ul class="special_items">
+				
+				<li><a href="about.html">About Us</a><i>/</i></li>
+				<li><a href="products.html">Best Deals</a><i>/</i></li>
+				<li><a href="services.html">Services</a></li>
+			</ul>
+		</div>
+		<div class="w3ls_logo_products_left1">
+			<ul class="phone_email">
+				<li><i class="fa fa-phone" aria-hidden="true"></i>91+ 12345678</li>
+				<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">onmarket@gmail.com</a></li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li>FAQ's</li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+			  <div class="navbar-header nav_2">
+				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			   </div> 
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li><a href="products.html">Branded Foods</a></li>
+						<li><a href="household.html">Households</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="vegetables.html">Vegetables</a></li>
+										<li><a href="vegetables.html">Fruits</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li><a href="kitchen.html">Kitchen</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="drinks.html">Soft Drinks</a></li>
+										<li><a href="drinks.html">Juices</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="frozen.html">Frozen Snacks</a></li>
+										<li><a href="frozen.html">Frozen Nonveg</a></li>
+									</ul>
+								</div>                  
+							</div>	
+						</li>
+						<li><a href="bread.html">Bread & Bakery</a></li>
+						<li><a href="payment.html">Payment</a></li>
+					</ul>
+				 </div>
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+		<div class="faq">
+			<h3>FAQ's</h3>
+			<div class="panel-group w3l_panel_group_faq" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>What are the store's opening hours?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				  <div class="panel-body panel_text">
+					Our store is open from 8:00 AM to 10:00 PM, seven days a week.				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>What payment methods do you accept?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				   <div class="panel-body panel_text">
+					We accept cash, credit cards, debit cards, mobile payments, and contactless payments like Apple Pay and Google Pay.				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Are there any current promotions or discounts available?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				   <div class="panel-body panel_text">
+					Yes, we frequently have promotions and discounts on various products. Check our website or in-store displays for the latest offers.				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFour">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Can I return or exchange products if I'm not satisfied?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				   <div class="panel-body panel_text">
+					Yes, we have a hassle-free return and exchange policy. Please keep your receipt and return the item within 30 days for a refund or exchange.				  </div>
+				</div>
+			  </div>
+			   <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFive">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>What is your policy on expired or damaged products?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				   <div class="panel-body panel_text">
+					We strive to provide fresh and high-quality products. If you find an expired or damaged item, please bring it to our attention, and we will gladly replace it or refund your purchase.				  </div>
+				</div>
+			  </div>
+			   <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingSix">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Do you carry organic or locally sourced products?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+				   <div class="panel-body panel_text">
+					Absolutely! We offer a wide selection of organic and locally sourced products to support sustainable and local farming practices.				  </div>
+				</div>
+			  </div>
+			   <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingSeven">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Are shopping carts and baskets available for customer use?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+				   <div class="panel-body panel_text">
+					Yes, we provide shopping carts and baskets to make your shopping experience more convenient.				  </div>
+				</div>
+			  </div>
+			   <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingEight">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Do you offer assistance to customers with heavy or bulky items?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+				   <div class="panel-body panel_text">
+					Yes, our staff is always ready to assist you with heavy or bulky items to your vehicle upon request.				  </div>
+				</div>
+			  </div>
+			   <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingNine">
+				  <h4 class="panel-title asd">
+					<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Can I use reusable bags at the checkout?
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+				   <div class="panel-body panel_text">
+					Absolutely! We encourage customers to use reusable bags to reduce plastic waste. You can bring your own bags or purchase reusable bags at the store.
+				</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 w3_footer_grid">
+			<h3>information</h3>
+			<ul class="w3_footer_grid_list">
+				
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="products.html">Best Deals</a></li>
+				<li><a href="services.html">Services</a></li>		
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>policy info</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="faqs.html">FAQ</a></li>
+				<li><a href="privacy.html">privacy policy</a></li>
+				<li><a href="privacy.html">terms of use</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3 w3_footer_grid">
+			<h3>what in stores</h3>
+			<ul class="w3_footer_grid_list">
+				<li><a href="frozen.html">Frozen Snacks</a></li>
+				<li><a href="kitchen.html">Kitchen</a></li>
+				<li><a href="products.html">Branded Foods</a></li>
+				<li><a href="household.html">Households</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+	<script type="text/javascript">
+		$(document).ready(function() {				
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<script src="js/minicart.min.js"></script>
+<script>
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+</body>
+</html>
